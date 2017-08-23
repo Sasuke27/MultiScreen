@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:id="@+id/activity_main"
+    tools:context="khentarjiel.cabural.com.example.khent.multiappscreen.SecondActivity">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/MessageReplyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reply..."
+        android:layout_above="@+id/Sendbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+    <Button
+        android:id="@+id/Sendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:text="Send"
+        android:onClick="Reply_Btn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="112dp" />
+
+    <Button
+        android:id="@+id/Cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Sendbtn"
+        android:layout_alignBottom="@+id/Sendbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:text="Cancel"
+        android:onClick="Reply_Btn"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
